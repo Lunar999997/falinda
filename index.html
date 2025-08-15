@@ -13,8 +13,9 @@
           <!--Шапка-->
       <div class="nav-wrapper" >
 
-         <nav class="nav-left navbar">
+         <nav class="nav-left navbar"> <!-- Зачем класс nav-left и nav-right если при стилизации их ты не используешь -->
 
+             <!-- Неправильные ссылки на блоки, и блокам ты не задаёшь id - навигация поломана -->
             <a href="#Главная">Главная</a>
             <a href="#Весна_2025">Весна 2025</a>
             <a href="#Осень_2025">Осень 2025</a>
@@ -22,7 +23,7 @@
          </nav>
 
 
-         <div class="logo">
+         <div class="logo"> <!-- Зачем дополнительная обёртка, если класс ты можешь задать тегу img -->
 
             <img src="assets/logo.svg" alt="Логотип">
 
@@ -30,6 +31,8 @@
 
           <nav class="nav-right navbar">
 
+              <!-- Неправильные ссылки на блоки, и блокам ты не задаёшь id - навигация поломана -->
+              <!-- Неправильные названия ссылок -->
               <a href="#Главная">Главная</a>
               <a href="#Весна_2025">Весна 2025</a>
               <a href="#Осень_2025">Осень 2025</a>
@@ -40,21 +43,21 @@
 
     </header>
 
-      <div class="home-wrapper">
+      <div class="home-wrapper"> <!-- Неправильное расположение элементов, из-за чего кнопка у плохими margin, подумай над структурой этого блока -->
 
-          <div class="text-img">
+          <div class="text-img"> <!-- Зачем дополнительная обёртка, если класс ты можешь задать тегу img -->
 
               <img src="assets/info.png" alt="Коллекция">
 
           </div>
 
-          <div>
+          <div> <!-- Зачем дополнительная обёртка, если класс ты можешь задать тегу button -->
 
           <button type="submit" class="btn">Сделать заказ</button>
 
           </div>
 
-          <div class="model-img">
+          <div class="model-img"> <!-- Зачем дополнительная обёртка, если класс ты можешь задать тегу img -->
 
               <img src="assets/model.png" alt="Модель">
 
@@ -62,9 +65,9 @@
 
       </div>
 
-      <div class="collection-wrapper spring">
+      <div class="collection-wrapper spring"> <!-- Зачем класс spring, если для стилизации не используешь -->
 
-            <div class="collection-logo">
+            <div class="collection-logo"> <!-- Неправильно! Не исправила прошлый баг, тут должно быть не картинкой а текстом, тем более у тебя есть стили для этого текста -->
 
                <img src="assets/spring.png">
 
@@ -153,7 +156,7 @@
 
       </div>
 
-      <div class="collection-wrapper autumn">
+      <div class="collection-wrapper autumn"> <!-- Зачем класс autumn, если для стилизации не используешь -->
 
           <div class="collection-logo">
 
